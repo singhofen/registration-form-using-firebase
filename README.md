@@ -9,3 +9,5 @@ Fully responsive registration form using google firebase. Enter patient or any p
 
 ![image](https://user-images.githubusercontent.com/23155302/41673007-80c690d6-7489-11e8-8f5a-bb19a9330fa7.png)
 
+# snippet of the registered information from firebase
+![image](https://user-images.githubusercontent.com/23155302/41673250-55684c44-748a-11e8-81e5-05d9c7b3a1f0.png)
