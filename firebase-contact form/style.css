@@ -1,0 +1,151 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background:#999;
+  color:#111;
+  line-height:1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding:1em;
+}
+
+.container{
+  max-width:900px;
+  max-height: auto;
+  margin-left:auto;
+  margin-right:auto;
+  padding:1em;
+}
+
+ul{
+  list-style: none;
+  padding:0;
+}
+
+.brand{
+  text-align: center;
+}
+
+.brand span{
+  color:#fff;
+}
+
+.wrapper{
+  box-shadow: 0 0 100px 0 rgba(72,94,116,0.7);
+}
+
+.wrapper > *{
+  padding: 1em;
+}
+
+.company-info{
+  background:#e6e8e9;
+}
+
+.company-info h3, .company-info ul{
+  text-align: center;
+  margin:0 0 1rem 0;
+}
+
+.contact{
+  background:#cbcccb;
+}
+
+/* ALERT MESSAGE STYLES */
+.alert{
+  text-align: center;
+  padding:10px;
+  background:#79c879;
+  color:#fff;
+  margin-bottom:10px;
+  display:none;
+}
+/* FORM STYLES */
+.contact form{
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap:10px;
+  grid-column: auto;
+}
+
+.contact form label{
+  display:block;
+}
+
+.contact form p{
+  margin:0;
+  height: auto;
+}
+
+.contact form .full{
+  grid-column: 1 / 2;
+}
+
+.contact form button, .contact form input, .contact form textarea{
+  width:100%;
+  padding:1em;
+  border:1px solid #688dae;
+}
+
+.contact form button{
+  background:#5c8ba2;
+  border:0;
+  text-transform: uppercase;
+}
+
+.contact form button:hover,.contact form button:focus{
+  background:#020405;
+  color:#fff;
+  outline:0;
+  transition: background-color 2s ease-out;
+}
+footer{
+  color: rgb(5, 2, 24);
+  margin-bottom: 12px;
+}
+h2{
+  text-align: center;
+  font-family:Arial, Helvetica;
+}
+.info{
+  text-indent: 50px;
+}
+/* Gradient color1 - color2 - color1 */
+
+hr{
+  border: 0;
+  height: 2px;
+  width: 70%;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+img{
+  width: 100%;
+  background-repeat: no-repeat;
+  border: 3px solid rgb(53, 57, 53);
+  margin: auto;
+  opacity: 0.8;
+  
+}
+
+/* LARGE SCREENS */
+@media(min-width:700px){
+  .wrapper{
+    display:grid;
+    grid-column: 1 / 2;
+    
+  }
+
+  .wrapper > *{
+    padding:2em;
+  }
+
+  .company-info h3, .company-info ul, .brand{
+    text-align: left;
+  }
+  .contact form .full{
+    grid-column: 2 / 4;
+  }
+}

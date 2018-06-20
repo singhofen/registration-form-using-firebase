@@ -1,0 +1,5 @@
+to start using app, go to firebase.com > view console for project(s) > then go to database and you will be able to view number or who registered with the form. 
+you can easily upload it to your github pages website or any other website.
+@TODO's
+
+add modify patient demographics with all the available fields and makie them required.

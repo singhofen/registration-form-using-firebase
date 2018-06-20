@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Patient Login Form w/Firebase</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<!-- FIREBASE LINK TO DATABASE -->
+<!-- https://patient-contact-forms.firebaseio.com/ -->
+<body>
+  <div class="container-fluid">
+    <h1>Contact Form Linked w/ Firebase <span><i class="fas fa-database"></i></span></h1>
+    <br>
+
+
+  </div>
+  <div class="container">
+    <h1 class="brand"><span>Patient</span> Login <span>Form </span><span><i class="fas fa-file-alt"></i></span></h1>
+    <div class="wrapper">
+      <div class="company-info">
+        <h3>John Doe Memorial Hospital <span><i class="far fa-hospital"></i></span></h3>
+        <ul>
+          <li><i class="fa fa-road"></i>1600 Amphitheatre Parkway <br>Mountain View, CA 94043</li>
+          <li><i class="fa fa-phone"></i> 1-866-246-6453</li>
+          <li><i class="fa fa-envelope"> ~  <a href="mailto:sample@example.com?Subject=Hello%20again" target="_top">Email Questions </a></i> </li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h3>Patient Information</h3>
+        <div class="alert">Your Information has been sent</div>
+        <form id="contactform">
+          <p>
+            <label>First Name</label>
+            <input type="text" name="name" id="firstname" required>
+          </p>
+          <p>
+            <label>Last Name</label>
+            <input type="text" name="name" id="lastname" required>
+          </p>
+          <p>
+            <label>Birtdate</label>
+            <input type="date" name="bday" id="bday" required>
+          </p>
+          
+          <p>
+            <label>Mailing Address</label>
+            <input type="text" name="address" id="address" required>
+          </p>
+          <p>
+            <label>Email Address</label>
+            <input type="text" name="email" id="email" required>
+          </p>
+          <p>
+            <label>Phone Number</label>
+            <input type="text" name="phone" id="phone" required>
+          </p>
+          <p>
+            <label>Referring Physician</label>
+            <input type="text" name="name" id="referringdr" required>
+          </p>
+          <p>
+            <label>Primary Physician</label>
+            <input type="text" name="name" id="primarydr" required>
+          </p>
+          <p>
+            <label>Emergency Contact</label>
+            <input type="text" name="name" id="ercontact" required>
+          </p>
+          <p>
+            <label>Relationship</label>
+            <input type="text" name="name" id="relationship" required>
+          </p>
+          <p class="full">
+            <label>Message</label>
+            <textarea name="message" rows="1" id="message" required></textarea>
+          </p>
+          <p class="full">
+            <button type="submit">Submit Information</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <br><hr>
+  <section class="container-fluid">
+    <div class="info">
+      <h2>~ Our History In the Community ~</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae modi alias dolor accusantium nihil exercitationem provident magnam quidem, animi voluptate eaque nesciunt labore voluptatibus fuga voluptates quia atque vitae voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae hic dolor dolorem? Incidunt, rem animi dolore eius repellendus corrupti dicta impedit! Minima voluptatum odit officiis dignissimos velit illo odio error?</p>
+     
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, libero esse! Esse fugit ratione vero eligendi sed ducimus error odit quas, quis hic, porro quaerat tempora quam architecto labore ut?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, nihil quis quibusdam vel repellat vero atque officiis velit, possimus quae voluptas quo enim, accusamus voluptate minima? Vero consectetur ad quam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, libero esse! Esse fugit ratione vero eligendi sed ducimus error odit quas, quis hic, porro quaerat tempora quam architecto labore ut?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, nihil quis quibusdam vel repellat vero atque officiis velit, possimus quae voluptas quo enim, accusamus voluptate minima? Vero consectetur ad quam.</p>
+    </div>
+  </section>
+  <footer class="text-center">John Doe, Memorial Hospital, 1600 Amphitheatre Parkway 
+      Mountain View, CA 94043. Est. 1901<span><i class="far fa-hospital"></i></span></footer>
+      <footer class="text-center"> &copy; 2018 MIT Lisence</footer>
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+
+  <script src="main.js"></script>
+  
+  <!-- bootstrap js links -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>
