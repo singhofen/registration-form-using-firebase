@@ -1,4 +1,4 @@
- // Initialize Firebase
+ // Initialize Firebase Database
  var config = {
    apiKey: "AIzaSyARS5brBAq1Tw3pBv_UkPgxUwtmuqDreUI",
    authDomain: "patient-contact-forms.firebaseapp.com",
@@ -20,7 +20,7 @@ document.getElementById('contactform').addEventListener('submit', submitForm);
 function submitForm(e){
   e.preventDefault();
 
-  // Get values
+  // Get values from user input feilds
   var lastname = getInputVal('lastname');
   var firstname = getInputVal('firstname');
   var email = getInputVal('email');
@@ -54,6 +54,7 @@ function getInputVal(id){
 }
 
 // Save message to firebase
+//patient input fields
 function saveMessage(firstname, lastname, email, phone, message, bday, address, ercontact, relationship, primarydr, referringdr){
   var newMessageRef = messagesRef.push();
   newMessageRef.set({
